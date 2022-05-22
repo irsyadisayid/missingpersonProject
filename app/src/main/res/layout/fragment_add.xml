@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.AddFragment"
+    android:layout_marginBottom="60dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/don_t_worry"
+        android:textColor="@color/mycolor1"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:foregroundGravity="left"
+        android:text="@string/be_patient"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView3"
+        android:shadowColor="@color/mycolor1"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="2"
+        android:text="@string/we_are_with_you"
+        android:textColor="#DCB66C"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/form_btn"
+        android:layout_marginHorizontal="20sp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:shadowColor="@color/white"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="0.3"
+        android:text="@string/fill_the_form"
+        android:textColor="@color/mycolor1"
+        android:textSize="17sp" />
+
+    <Button
+        android:id="@+id/form_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15sp"
+        android:layout_marginBottom="24dp"
+        android:padding="15sp"
+        android:text="@string/fill_the_form_btn"
+        android:layout_alignParentBottom="true"
+        android:textSize="14sp" />
+
+</RelativeLayout>

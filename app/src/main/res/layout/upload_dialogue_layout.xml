@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/dialog_img"
+        android:layout_width="40sp"
+        android:layout_height="40sp"
+        android:scaleType="centerCrop"
+        android:src="@color/mycolor1"
+         />
+
+    <TextView
+        android:id="@+id/dialog_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="5sp"
+        android:autoSizeTextType="uniform"
+        android:maxLines="1"
+        android:gravity="center_horizontal"
+        android:text="image is uploading ..."
+        android:textSize="15sp"
+        />
+
+    <ProgressBar
+        android:id="@+id/progressDialog"
+        android:layout_width="30sp"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:indeterminateTint="@color/mycolor1"
+        android:indeterminateTintMode="src_atop"
+        android:layout_alignParentRight="true"
+        />
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/dialog_progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dialog_img"
+        android:layout_marginTop="12dp"
+        android:max="200"
+        android:progress="40"
+        />
+
+    <Button
+        android:id="@+id/cancelBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dialog_progress"
+        android:layout_marginTop="8dp"
+        android:layout_marginHorizontal="20sp"
+        android:layout_marginBottom="8dp"
+        android:text="cancel"
+        />
+
+
+
+</RelativeLayout>

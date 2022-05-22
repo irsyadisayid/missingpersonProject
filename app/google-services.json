@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "453765504366",
+    "project_id": "daftarpencarianorang-6156e",
+    "storage_bucket": "daftarpencarianorang-6156e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:453765504366:android:f342feebd3b273e639357f",
+        "android_client_info": {
+          "package_name": "com.example.daftarpencarianorang"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "453765504366-26ietm6o3dumedrth2laalhj6jrckmsg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.daftarpencarianorang",
+            "certificate_hash": "e0a8fba4e94b300eda93b0835c3bfa93a8cce54f"
+          }
+        },
+        {
+          "client_id": "453765504366-p2k61kdpeh0cial1qqjbk0n4orecjkrs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHvJuf4b_RJ8RFenNG4Qr0do3CITmZlxQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "453765504366-p2k61kdpeh0cial1qqjbk0n4orecjkrs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

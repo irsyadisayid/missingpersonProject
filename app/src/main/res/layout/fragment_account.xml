@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.AccountFragment">
+
+    <TextView
+        android:id="@+id/user_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/email_bg"
+        android:gravity="center"
+        android:maxLength="40"
+        android:maxLines="1"
+        android:drawableStart="@drawable/ic_person"
+        android:paddingVertical="10sp"
+        android:paddingStart="20sp"
+        android:text="Email Pengguna"
+        android:textColor="@color/mycolor1"
+        android:textSize="20sp" />
+
+
+    <TextView
+        android:id="@+id/your_list_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_email"
+        android:gravity="center"
+        android:layout_marginTop="24dp"
+        android:textStyle="bold"
+        android:textColor="@color/mycolor1"
+        android:text="Daftar Pencaria Orang Hilang Aktif" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/your_list_title"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp" />
+
+<!--    <ImageView-->
+<!--        android:id="@+id/posterImg"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:scaleType="centerInside"-->
+<!--        android:layout_marginHorizontal="10sp"-->
+<!--        android:src="@drawable/search_missing_person_poster"-->
+<!--/>-->
+
+
+    <Button
+        android:id="@+id/logout_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20sp"
+        android:layout_marginBottom="16dp"
+        android:text="Keluar"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

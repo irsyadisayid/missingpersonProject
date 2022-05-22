@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="5dp"
+    app:cardBackgroundColor="#aaaa"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relamli">
+
+    <LinearLayout
+        android:id="@+id/linearmli"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/missing_person_image"
+                android:layout_width="match_parent"
+                android:layout_height="150sp"
+                android:layout_marginEnd="8dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/profile" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/missing_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:maxLines="1"
+                android:text="Nama Orang Hilang"
+                android:textColor="@color/mycolor1"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/born"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/missing_name"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:maxLines="1"
+                android:text="Tanggal Lahir : 10-10-1999" />
+
+            <TextView
+                android:id="@+id/missing_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/born"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:maxLines="1"
+                android:text="Tanggal Hilang : 03-02-2021" />
+
+            <TextView
+                android:id="@+id/gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/missing_date"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:maxLines="1"
+                android:text="Jenis Kelamin : Laki - Laki" />
+
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+        <ImageView
+            android:layout_marginTop="-20dp"
+            android:id="@+id/imgShare"
+            android:layout_below="@id/linearmli"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="25sp"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/ic_baseline_share_24"
+            />
+        <Button
+            android:id="@+id/see_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgShare"
+            android:layout_marginHorizontal="20sp"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="#65680D"
+            android:padding="10sp"
+            android:text="see Detail"
+            tools:targetApi="lollipop" />
+
+        <Button
+            android:id="@+id/edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/see_detail"
+            android:layout_marginHorizontal="20sp"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="#65680D"
+            android:padding="10sp"
+            android:text="Edit"
+            android:visibility="gone"
+            tools:targetApi="lollipop" />
+
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/hapus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edit"
+            android:layout_marginHorizontal="20sp"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="#65680D"
+            android:padding="10sp"
+            android:text="Hapus"
+            tools:targetApi="lollipop" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

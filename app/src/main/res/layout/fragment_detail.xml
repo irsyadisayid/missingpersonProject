@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.DetailFragment">
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:text="Detail : "
+        android:textColor="@color/mycolor1"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20sp">
+
+
+            <TextView
+                android:id="@+id/detail_heigth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Tinggi Badan : 160 cm"
+                android:textColor="@color/mycolor1"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/detail_hair"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Rambut : Hitam"
+                android:textColor="@color/mycolor1"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/detail_skin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Kulit : Sao Matang"
+                android:textColor="@color/mycolor1"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/detail_eye"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Mata : Coklat"
+                android:textColor="@color/mycolor1"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/detail_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Ciri Khusus : Botak"
+                android:textColor="@color/mycolor1"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/detail_infol"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/dummy"
+                android:textColor="@color/mycolor1"
+                android:textSize="17sp"/>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</FrameLayout>
